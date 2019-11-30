@@ -1,27 +1,27 @@
 # CICD-AWS
 ## Terraform Create ECS with CodePipeline
 
-You can change variables in `variables.tfvars` ,
+if you want change variables in `variables.tfvars` ,
 
-For example: I want to create a VPC with CIDR ( 10.0.0.0/16 ), two public subnet and two private subnet.
+For example: want to create a VPC with CIDR ( 10.0.0.0/16 ), two public subnet and two private subnet.
 
 ```
 vpc_cidr = "10.0.0.0/16"
 environment = "production"
 public_subnet_cidrs = ["10.0.0.0/24", "10.0.1.0/24"]
 private_subnet_cidrs = ["10.0.50.0/24", "10.0.51.0/24"]
-availibility_zones = ["us-west-2a", "us-west-2b"]
-region = "us-west-2"
-ami_image = "ami-09568291a9d6c804c"
-ecs_key = "demo"
+availibility_zones = ["us-east-1a", "us-east-1b"]
+region = "us-east-1"
+ami_image = "ami-04763b3055de4860b"
+ecs_key = "cicd"
 instance_type = "t2.medium"
-repo_owner = "vankhoa011"
-repo_name = "demo-cicd-codepipeline"
+repo_owner = "naveenkumar199901"
+repo_name = "cicd-aws"
 github_oauth_token = "github_oauth_token"
 
 ```
 
-Then run
+run
 
 ```
 terraform init
