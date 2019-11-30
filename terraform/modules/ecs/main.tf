@@ -341,7 +341,7 @@ resource "aws_iam_role_policy" "iam_code_build_policy" {
 POLICY
 }
 resource "aws_s3_bucket" "default" {
-  bucket = "demo-cicd-codepipeline-ecs"
+  bucket = "cicd-aws-ecs"
   acl    = "private"
 
   tags {
