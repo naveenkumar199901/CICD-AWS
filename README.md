@@ -2,7 +2,7 @@
 ## Terraform Create ECS with CodePipeline
 
 if you want change variables in `variables.tfvars` ,
-Create the requirement.txt
+Create the requirement.txt in the web folder
 ```paste  Flask==0.12.2```
 For example: want to create a VPC with CIDR ( 10.0.0.0/16 ), two public subnet and two private subnet.
 
