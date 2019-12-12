@@ -1,8 +1,8 @@
 # Terraform Create ECS with CodePipeline
 
-You can change variables in `variables.tfvars` , 
+You can change variables in `variables.tfvars` 
 
-For example: I want to create a VPC with CIDR ( 10.0.0.0/16 ), two public subnet and two private subnet.
+I want to create a VPC with CIDR(Classless inter-domain routing) ( 10.0.0.0/16 ), 2 public subnet and 2 private subnet.
 ```
 vpc_cidr = "10.0.0.0/16"
 environment = "production"
@@ -12,7 +12,7 @@ availibility_zones = ["us-east-1a", "us-east-1f"]
 region = "us-east-1"
 ```
 
-Then run
+Then run the command
 
 ```
 terraform init
